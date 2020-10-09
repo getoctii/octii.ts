@@ -1,6 +1,6 @@
 {
   "name": "@innatical/octii.ts",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "license": "MIT",
   "main": "dist/index.js",
   "types": "src/index.ts",
