@@ -1,5 +1,5 @@
 {
-  "name": "neko-lib",
+  "name": "@innatical/neko-lib",
   "version": "1.0.0",
   "license": "MIT",
   "main": "dist/index.js",
