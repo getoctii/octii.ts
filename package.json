@@ -3,7 +3,7 @@
   "version": "1.0.3",
   "license": "MIT",
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "types": "src/index.ts",
   "prepublish": "tsc",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
