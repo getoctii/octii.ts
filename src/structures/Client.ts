@@ -61,9 +61,19 @@ export default abstract class Client {
 
       if (this.onJoin) {
         const community = (
-          await clientGateway.get(`/communities/${data.community_id}`)
+          await clientGateway.get(`/communities/${data.community_id}`, {
+            headers: {
+              Authorization: this.token
+            }
+          })
         ).data
-        const user = (await clientGateway.get(`/users/${data.user_id}`)).data
+        const user = (
+          await clientGateway.get(`/users/${data.user_id}`, {
+            headers: {
+              Authorization: this.token
+            }
+          })
+        ).data
 
         this.onJoin(
           new Community({
