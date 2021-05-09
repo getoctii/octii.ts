@@ -1,6 +1,6 @@
 # octii.ts
 
-The offical bot library for [octii.chat](https://octii.chat) using the user API.
+The offical self-bot library for [octii.chat](https://octii.chat) using the user API.
 
 ## Installation
 
