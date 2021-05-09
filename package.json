@@ -7,9 +7,9 @@
   "files": [
     "dist/*"
   ],
-  "prepublish": "tsc",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "prepublish": "tsc"
   },
   "dependencies": {
     "axios": "^0.20.0",
