@@ -23,7 +23,7 @@ export default abstract class Client {
 
   constructor(prefix: string, token: string) {
     this.token = token
-    this.id = decode(token)
+    this.id = (decode(token) as { sub: string }).sub
     this.prefix = prefix
   }
 
