@@ -48,7 +48,9 @@ export default abstract class Client {
         new Channel(this, data.channel_id)
       )
       if (!data.content)
-        throw new Error('This message contains no content. Perhaps it is a DM?')
+        console.log(
+          '[CLIENT ERROR]  This message contains no content. Perhaps it is a DM? Those dont work!'
+        )
 
       if (message.author.id !== this.id) {
         const handler = Object.keys(this.commands).find((command) =>
