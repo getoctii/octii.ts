@@ -29,7 +29,7 @@ export default abstract class Client {
 
   run() {
     const gateway = new EventSource(
-      `https://gateway.octii.chat/events/subscribe/${this.id}`,
+      `https://api.octii.chat/v1/events/subscribe/${this.id}`,
       {
         headers: {
           Authorization: this.token
